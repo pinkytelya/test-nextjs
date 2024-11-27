@@ -2,8 +2,7 @@
 import {useParams} from "next/navigation";
 
 export default function FeedbackPage() {
-    const params = useParams();
-    const id = params.id;
+    const {id} = useParams();
 
     return (
         <div>

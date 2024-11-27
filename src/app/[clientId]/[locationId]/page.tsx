@@ -4,10 +4,7 @@ import { useRouter } from "next/navigation";
 
 export default function SecondPage() {
     const router = useRouter();
-    const params = useParams();
-    const clientId = params.clientId;
-    const locationId = params.locationId;
-    console.log(router)
+    const {clientId, locationId} = useParams();
 
     const handleNavigation = (path: string) => {
         router.push(`/${clientId}/${locationId}/${path}`);
